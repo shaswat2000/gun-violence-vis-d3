@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gun Violence Charts</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- <h2 style="text-align: center;">Shaswat Shrivastava — sshriv34@asu.edu</h2> -->
+<h1 style="text-align: center;">Argumentative Vis: Do more guns mean more violence?</h1>
+
+<p style="text-align: justify;">
+These visualizations examine the relationship between firearm ownership and the prevalence of gun violence in the United States—a topic that remains deeply controversial in public policy and social discourse. One widely accepted argument is that reducing the number of firearms in circulation can help lower gun violence by limiting access to deadly weapons. In contrast, an opposing viewpoint suggests that higher rates of gun ownership may instead deter violence by enabling self-defense and discouraging criminal activity. Using the same dataset but applying different rhetorical framings, the following visualizations explore how the same underlying data can be interpreted to support both sides of this debate.
+</p>
+
+<p>
+Dataset source: 
+<a href="https://www.kaggle.com/datasets/jameslko/gun-violence-data" target="_blank">
+Gun violence data (Kaggle)
+</a>
+<br>
+Additional information source: 
+<a href="https://www.thoughtco.com/gun-owners-percentage-of-state-populations-3325153" target="_blank">
+Gun ownership per state
+</a>
+</p>
+
+<div class="viz-row">
+
+    <div class="viz-panel">
+        <h3>More Guns Owned Equals More Violence</h3>
+        <svg id="chart1"></svg>
+        <div class="viz-caption">
+            This visualization plots the states on the basis of the number of gun violence incidents and the total number of guns registered. In this plot, I used the total number of guns registered instead of guns per capita to use the aggregation effect for framing, instead of normalizing it for the population of the state, to depict a positive correlation between gun violence and number of guns owned, which supports the title, "Do more guns mean more violence?". Due to higher number of guns owned, the number of gun violence incidents are statistically expected to increase, forming an positive correlation and persuading the readers to believe that more guns equal more violence.
+        </div>
+    </div>
+
+    <div class="viz-panel">
+        <h3>Gun Violence Isn't About Gun Ownership, More Guns Could Be A Deterrent</h3>
+        <svg id="chart2"></svg>
+        <div class="viz-caption">
+            This visualization plots the states on the basis of the number of gun violence incidents and the number of guns owned per capita. In this plot, I used the number of guns owned per capita instead of total number of guns owned to use the normalization effect for framing, instead of aggregating it over the population of the state, to depict a negative correlation between gun violence and number of guns owned per capita, which argues against the title, "Do more guns mean more violence?". This graph depicts that the states with higher number of guns per capita have lower gun violence incidents compared to those with lower number of guns per capita, suggesting that gun ownership doesn't mean gun violence, and also supporting a counter argument that higher gun ownership acts as a deterrent to gun violence incidents.
+        </div>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
